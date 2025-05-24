@@ -65,7 +65,6 @@ func ParseCurlCmd(path string) (*entity.Config, error) {
 		}
 	}
 
-	// Конфигурация
 	config := &entity.Config{
 		RequestMethod:  method,
 		URI:            parsedURL.Scheme + "://" + parsedURL.Host + parsedURL.Path,

@@ -63,9 +63,9 @@ func (r *HTTPResponse) PrintSummary() {
 	fmt.Printf("%sURL:%s           %s\n", colorCyan, colorReset, r.URL)
 
 	statusColor := colorGreen
-	if r.StatusCode >= 400 && r.StatusCode < 500 {
+	if r.StatusCode >= http.StatusBadRequest && r.StatusCode < http.StatusInternalServerError {
 		statusColor = colorYellow
-	} else if r.StatusCode >= 500 {
+	} else if r.StatusCode >= http.StatusInternalServerError {
 		statusColor = colorRed
 	}
 
@@ -102,5 +102,4 @@ func (r *HTTPResponse) PrintSummary() {
 			fmt.Println(strings.TrimSpace(preview))
 		}
 	}
-	fmt.Println()
 }
