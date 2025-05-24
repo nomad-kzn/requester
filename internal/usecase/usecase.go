@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"os"
 	"regexp"
-	"requester/internal/entity"
+	"github.com/nomad-kzn/requester/internal/entity"
 	"strings"
 )
 

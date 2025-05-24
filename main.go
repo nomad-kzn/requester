@@ -2,10 +2,10 @@ package main
 
 import (
 	"context"
+	entity2 "github.com/nomad-kzn/requester/internal/entity"
+	"github.com/nomad-kzn/requester/internal/usecase"
 	"log"
 	"net/http"
-	entity2 "requester/internal/entity"
-	"requester/internal/usecase"
 	"time"
 )
 
