@@ -1,0 +1,12 @@
+{
+  "request_method": "GET",
+  "uri": "https://mobile.zaman.redmadrobot.com/api/v1/health",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "request_headers": {
+    "Accept": "*/*",
+    "User-Agent": "requester_app",
+    "Accept-Encoding": "gzip, deflate, br"
+  }
+}

@@ -1,0 +1,1 @@
+curl --location 'https://mobile-dev.zaman.redmadrobot.com/api/v1/health'
